@@ -1,431 +1,1107 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
 
-  <title>Yeeun's PORTFOLIO</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.svg" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio - v3.3.0
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <!--
+    - #MAIN
+  -->
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
+  <main>
 
-      <div class="profile">
-        <img src="assets/img/photo_W.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Yeeun Kim</a></h1>
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/photo_W.jpg" alt="Yeeun Kim" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Yeeun Kim">Yeeun Kim</h1>
+
+          <p class="title">Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
       </div>
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>            
-          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Skills</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="kyeni03130@gmail.com" class="contact-link">kyeni03130@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+80 (010) 5786-2261</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2000-03-13">March 13, 2000</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>서울특별시 금천구</address>
+            </div>
+
+          </li>
+
         </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1><span class="typed" data-typed-items="Developer"></span></h1>
-      <h2>Kim Yeeun</h2>
-    </div>
-  </section><!-- End Hero -->
+        <div class="separator"></div>
 
-  <main id="main">
+        <ul class="social-list">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
 
-        <div class="section-title">
-          <h2>About</h2>
-          <p><!-- 자기소개 --></p>
-        </div>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
 
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/photo_W.jpg" class="img-fluid" alt="" style="display: block; margin: 0 auto; width:300px; height:400px;">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Web Developer</h3>
-            <p class="fst-italic">
-              열정있는 개발자, <br>
-              김예은입니다.
-            </p>
-            <div class="row">
-              <div class="col-lg-4">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>2000.03.13</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>010-5786-2261</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>서울 금천구</span></li>
-                </ul>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            안녕하세요 성장하는 개발자 김예은입니다. 다양한 분야의 웹 사이트를 만드는 것을 좋아합니다.
+          </p>
+
+          <p>
+            기능적이고, 사용자 친화적인, 매력있는 웹사이트를 구축하고 싶습니다.
+            23.04.05부터 자바 웹 개발 교육을 통해
+            개인 일정관리 사이트, 게시판, 밀키트 판매 쇼핑몰, 전자결재시스템을 제작했습니다.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Skills</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
               </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>kyeni03130@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Github:</strong> <span><a href="https://github.com/yeeunnnn">https://github.com/yeeunnnn</a></span></li>
-                </ul>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Language</h4>
+
+                <p class="service-item-text">
+                  JAVA, SQL
+                </p>
               </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">FrontEnd</h4>
+
+                <p class="service-item-text">
+                  HTML5, CSS, JavaScript/jquery, BootStrap
+                </p>
+              </div>
+
+            </li>
+            
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">BackEnd</h4>
+
+                <p class="service-item-text">
+                  Spring Boot, JavaScript/JSTL, Git, AWS
+                </p>
+              </div>
+
+            </li>
+            
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">DataBase(DB)</h4>
+
+                <p class="service-item-text">
+                  MariaDB, Oracle, MySql, MyBatis
+                </p>
+              </div>
+
+            </li>
+			
+			<li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Tool</h4>
+
+                <p class="service-item-text">
+                  Eclipse, STS(Spring-tool-suite), Git, Github
+                </p>
+              </div>
+
+            </li>
+            
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Project Summary</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>GoodeeFit</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                     GoodeeFit은 업무의 효율성과 생산성 향상을 위한 전자결재시스템입니다.
+                    본 프로젝트는 보다 직관적이고 사용자 친화적으로 개발하였으며,
+                    조직 내에서 업무 프로세스를 원활하게 관리하고 더 나은 협업을 지원해줍니다.
+                     다양한 오류를 극복하는 경험을 쌓았으며, 여러 Tool을 활용한 프로젝트 관리,
+                     많은 API들을 사용하였습니다.
+                    이 프로젝트는 저에게 많은 성장을 이루게 해준 프로젝트입니다.
+                     또한, 다양한 API를 활용하여 프로젝트를 보다 효과적으로 개발하였습니다. 이 프로젝트는 제게 큰 성장 기회를 제공한 프로젝트 중 하나였습니다.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>쉬운식탁</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    쉬운식탁은 현대인들의 바쁜 일상을 고려하여 설계된 밀키트 쇼핑몰입니다.
+                    요리를 편리하게, 맛있게 즐기고 싶을 때 이용할 수 있으며
+                    시간을 절약하고 편의성을 제공해줍니다.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>user-board</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    user-board는 커뮤니티 기능을 적용한 사내 게시판 웹 어플리케이션 프로젝트입니다.
+                    사용자 구분을 통해 글을 관리할 수 있으며, 댓글로 소통할 수 있는 프로그램입니다.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>diary</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    diary는 개인 일정관리 프로젝트입니다.
+                    캘린더를 활용한 일정 관리와, 노트 기능이 있어 편리하게 사용할 수 있습니다.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+		<!-- 
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
             </div>
-            <p>
-              <!-- 개발자 관련 문장2 -->
-            </p>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+		-->
+        <!--
+          - clients
+        -->
+		<!--  
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+	  -->
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">교육</h3>
           </div>
-        </div>
 
-      </div>
-    </section><!-- End About Section -->
+          <ol class="timeline-list">
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p><!-- 설명 --></p>
-        </div>
-	        <div class="row">
-	          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-	            <div class="icon"><i class="bx bx-server"></i></div>
-	            <h4 class="title"><a href="">Language</a></h4>
-	            <p class="description">
-	              JAVA<br/>
-	              SQL<br/>
-	            </p>
-	          </div>
-	          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-	            <div class="icon"><i class="bx bx-server"></i></div>
-	            <h4 class="title"><a href="">FrontEnd</a></h4>
-	            <p class="description">
-	              HTML5<br/>
-	              CSS<br/>
-	              JavaScript/jquery<br/>
-	              BootStrap<br/>
-	            </p>
-	          </div>
-	          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-	            <div class="icon"><i class="bx bx-server"></i></div>
-	            <h4 class="title"><a href="">BackEnd</a></h4>
-	            <p class="description">
-	              Spring Boot<br/>
-	              JavaScript/JSTL<br/>
-	              Git<br/>
-                AWS
-	            </p>
-	          </div>
-	          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-	            <div class="icon"><i class="bx bx-server"></i></div>
-	            <h4 class="title"><a href="">DataBase(DB)</a></h4>
-	            <p class="description">
-	              MariaDB<br/>
-	              Oracle<br/>
-	              MySql<br/>
-	              MyBatis
-	            </p>
-	          </div>
-	          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-	            <div class="icon"><i class="bx bx-server"></i></div>
-	            <h4 class="title"><a href="">Tool</a></h4>
-	            <p class="description">
-	              Eclipse<br/>
-	              STS(Spring-tool-suite)<br/>
-	              Git<br/>
-	              Github
-	            </p>
-	          </div>
-	        </div>
-      </div>
-    </section><!-- End Skills Section -->
-    
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
+            <li class="timeline-item">
 
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p><!-- 이력서 관련 문장 --></p>
-        </div>
+              <h4 class="h4 timeline-item-title">구디아카데미</h4>
 
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Yeeun Kim</h4>
-              <p><em><!-- 경력 요약 --></em></p>
-              <ul>
-                <li>서울특별시 금천구 시흥동</li>
-                <li>010-5786-2261</li>
-                <li>kyeni03130@gmail.com</li>
-              </ul>
-            </div>
+              <span>2023.04 - 2023.09</span>
 
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>구디아카데미 교육 수료</h4>
-              <h5>2023.04.05 - 2023.09.26</h5>
-              <p><em>클라우드 활용 자바 개발자 양성과정</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>성결대학교</h4>
-              <h5>2019.03 - 2024.08</h5>
-              <p><em>산업경영공학과(주전공)</em></p>
-              <p><em>컴퓨터공학과(부전공)</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>독산고등학교</h4>
-              <h5>2016.03 - 2019.02</h5>
-              <p><em>이공계</em></p>
-            </div>
-          </div>
-          
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          	<h3 class="resume-title">Certificate</h3>
-            <div class="resume-item">
-              <h4>정보처리기사 1차</h4>
-              <h5>2023.07</h5>
-              <p><em>한국산업인력공단</em></p>
-              
-              <h4>운전면허 2종보통</h4>
-              <h5>2019.01</h5>
-              <p><em>서울지방경찰청</em></p>
-		    
-              <h4>MOS Master</h4>
-              <h5>2019</h5>
-              <p><em>Microsoft</em></p>
-            </div>
-          </div>
-        </div>
+              <p class="timeline-text">
+                [K-DT]클라우드 활용 자바 개발자 양성과정(5회차)
+              </p>
 
-      </div>
-    </section><!-- End Resume Section -->
+            </li>
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
+            <li class="timeline-item">
 
-        <div class="section-title">
-          <h2>Portfolio</h2>
-        </div>
-        <div class="row">
+              <h4 class="h4 timeline-item-title">성결대학교</h4>
+
+              <span>2019.03 — (2024.03 졸업예정)</span>
+
+              <p class="timeline-text">
+                주전공 : 산업경영공학과
+                부전공 : 컴퓨터공학과
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">독산고등학교</h4>
+
+              <span>2016.03 — 2019.02</span>
+
+              <p class="timeline-text">
+                이공계열
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
         
-		<!-- Meal-Kit 쇼핑몰 사이트 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up">
-            <h3 class="portfolio-title">쉬운식탁</h3>
-            <div class="portfolio-item">
-              <div><img src="assets/img/portfolio/semi_project_main.png" class="img-fluid img-border"></div>
-    	      	<!-- shop 프로젝트 설명 -->
-              <ul>
-                <li>밀키트 쇼핑몰 사이트</li>
-                <li>ID(admin/abcd)/PW(1234)</li>
-                <li>진행 기간</li>
-                  <div> - 2023.05.30 ~ 2023.06.23 (4 Weeks)</div>
-                <li>개발 환경</li>
-                  <div> - OS : Windows 11</div>
-                  <div> - Tool : Eclipse</div>
-                  <div> - Skills : JAVA, HTML5, BootStrap, JSTL</div>
-                  <div> - Server : Apache Tomcat9</div>
-                  <div> - DataBase : MariaDB, HeidiSQL</div>
-                <li>서비스 환경</li>
-                  <div> - OS : Ubuntu</div>
-                  <div> - Platform : AWS Lightsail</div>
-              </ul>
-              <h4><a href="http://54.180.14.179/semi_project/" target="_blank">Project AWS Link</a></h4>
-              <h4><a href="https://github.com/yeeunnnn/semi-project.git" target="_blank">Source code Link</a></h4>
-            </div>	 
-          </div>
-          
-          <!-- User Board 사내 게시판 사이트 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up">
-            <h3 class="portfolio-title">User Board</h3>
-            <div class="portfolio-item">
-              <div><img src="assets/img/portfolio/userBoard_main.jpg" class="img-fluid img-border"></div>
-              <!-- User Board 설명 -->
-              <ul>
-                <li>사내 게시판 사이트</li>
-                <li>ID(admin/user1)/PW(1234)</li>
-                <li>진행 기간</li>
-                  <div> - 2023.05.02 ~ 2023.05.17 (3 Weeks)</div>
-                  <li>개발 환경</li>
-                    <div> - OS : Windows 11</div>
-                    <div> - Tool : Eclipse</div>
-                    <div> - Skills : JAVA, HTML5, BootStrap</div>
-                    <div>&emsp; &emsp; &emsp; JavaScript, JSTL, JQuery</div>
-                    <div> - Server : Apache Tomcat9</div>
-                    <div> - DataBase : MariaDB, HeidiSQL</div>
-                  <li>서비스 환경</li>
-                    <div> - OS : Ubuntu</div>
-                    <div> - Platform : AWS Lightsail</div>
-              </ul>
-              <h4><a href="http://54.180.14.179/userboard/home.jsp" target="_blank">Project AWS Link</a></h4>
-              <h4><a href="https://github.com/yeeunnnn/user-board.git" target="_blank">Source code Link</a></h4>
-            </div>	 
-          </div>
-                
-	      <!-- Diary 개인 일정관리 사이트 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up">
-            <h3 class="portfolio-title">Diary Project</h3>
-            <div class="portfolio-item">
-              <div><img src="assets/img/portfolio/diary_main.jpg" class="img-fluid img-border"></div>
-              <!-- Diary 설명 -->
-              <ul>
-                <li>개인 일정관리 사이트</li>
-                <li>진행 기간</li>
-                  <div> - 2023.04.05 ~ 2023.04.30 (4 Weeks)</div>
-                  <li>개발 환경</li>
-                    <div> - OS : Windows 11</div>
-                    <div> - Tool : Eclipse</div>
-                    <div> - Skills : JAVA, HTML5, BootStrap</div>
-                    <div>&emsp; &emsp; &emsp; JavaScript, JSTL, JQuery</div>
-                    <div> - Server : Apache Tomcat9</div>
-                    <div> - DataBase : MariaDB, HeidiSQL</div>
-                  <li>서비스 환경</li>
-                    <div> - OS : Ubuntu</div>
-                    <div> - Platform : AWS Lightsail</div>
-              </ul>
-              <h4><a href="http://54.180.14.179/diary/home.jsp" target="_blank">Project AWS Link</a></h4>
-              <h4><a href="https://github.com/yeeunnnn/diary.git" target="_blank">Source code Link</a></h4>
-            </div>	 
-          </div>
-          
-          <!-- 대학 프로젝트 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up">
-            <h3 class="portfolio-title">소규모 정비소의 재고관리</h3>
-            <div class="portfolio-item">
-              <div><img src="assets/img/portfolio/소규모 정비소의 재고관리.jpg" class="img-fluid img-border"></div>
-    	      	<!-- shop 프로젝트 설명 -->
-              <ul>
-                <li>소규모 정비소의 재고관리</li>
-                <li>진행 기간</li>
-                  <div> - 2022.03 ~ 2022.06 4학년 1학기</div>
-                <li>프로젝트 소개</li>
-                  <div> - 사업소재 : 정비소</div>
-                  <div> - 프로젝트 내용 : 소규모 정비소의 효율적인 운영을 위한 맞춤 재고관리 전략 수립</div>
-                  <div> - 분석 툴 : 정비소 ERP, Excel</div>
-              </ul>
-              <h4><a href="assets/file/[김예은] 소규모 정비소의 재고관리 .docx" target="_blank">Project Link</a></h4>
-            </div>	 
-          </div>
-	      
-        </div>
-    
-	      
-      </div>
-    </section><!-- End portfolio Section -->
-	    
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
+		<!-- 자격증 -->
+        <section class="timeline">
 
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p></p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-            <div class="col-lg-6 col-md-4">
-              <div class="addressMap">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25339.7441903054!2d126.89007655531721!3d37.44967011238763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b61b4c6d09fa9%3A0xbdcc29a2bd33b468!2z7ISc7Jq47Yq567OE7IucIOq4iOyynOq1rCDsi5ztnaXrj5k!5e0!3m2!1sko!2skr!4v1690986563520!5m2!1sko!2skr" frameborder="0" style="border:0; width: 100%; height: 350px;" allowfullscreen></iframe>
-              </div>
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <div class="col-lg-6 col-md-4">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>서울특별시 금천구 시흥동</p>
-              </div>
+            <h3 class="h3">자격</h3>
+          </div>
 
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>kyeni03130@gmail.com</p>
-              </div>
+          <ol class="timeline-list">
 
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+82 010-5786-2261</p>
-              </div>
-            </div>
+            <li class="timeline-item">
 
-        </div>
+              <h4 class="h4 timeline-item-title">정보처리기사</h4>
 
-      </div>
-    </section><!-- End Contact Section -->
+              <span>2023.06 한국산업인력공단</span>
 
-  </main><!-- End #main -->
+              <p class="timeline-text">
+                1차 필기 합격
+              </p>
+
+            </li>
+            
+			<li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">MOS Master</h4>
+
+              <span>2019.08 Microsoft</span>
+
+              <p class="timeline-text">
+                Word, Excel, PPT, Access를 취득하였으며
+                이러한 경험을 통해 컴퓨터를 활용 능력을
+              </p>
+
+            </li>
+            
+          </ol>
+
+        </section>
         
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Yeeun KIM</span></strong> All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">경험</h3>
+          </div>
+
+          <ol class="timeline-list">
+          
+        	<li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">인공지능 및 데이터 분석 경진대회 은상</h4>
+
+              <span>2022.07 성결대학교</span>
+
+              <p class="timeline-text">
+                중소기업 생산 자동화 유전 알고리즘을 활용한 데이터 분석 실습
+              </p>
+
+            </li>
+			
+			<li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">역량 인증제 포트폴리오 대회 우수상</h4>
+
+              <span>2022.05 성결대학교</span>
+
+              <p class="timeline-text">
+                대학 생활(학과 필수교과 및 교양교과, 비교과) 참여에 대한 포트폴리오 대회입니다.
+              </p>
+
+            </li>
+            
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">창업아이디어 경진대회 동상</h4>
+
+              <span>2021.12 성결대학교</span>
+
+              <p class="timeline-text">
+                기계 설계 아이디어: 마스카라 리무버
+              </p>
+
+            </li>
+            
+          </ol>
+
+        </section>    
+		<!--  
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+-->
+      </article>
+	  
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+	<article class="portfolio" data-page="portfolio">
+
+		<header>
+			<h2 class="h2 article-title">Portfolio</h2>
+		</header>
+
+		<section class="projects">
+
+			<ul class="filter-list">
+	            <li class="filter-item">
+					<button class="active" data-filter-btn>Web application</button>
+	            </li>
+
+	            <li class="filter-item">
+	            	<button data-filter-btn>Document</button>
+	            </li>
+			</ul>
+
+			<div class="filter-select-box">
+
+				<button class="filter-select" data-select>
+
+					<div class="select-value" data-selecct-value>Select category</div>
+	
+					<div class="select-icon">
+						<ion-icon name="chevron-down"></ion-icon>
+					</div>
+
+           		</button>
+
+				<ul class="select-list">
+	
+	              <li class="select-item">
+	                <button data-select-item>Web application</button>
+	              </li>
+	
+	              <li class="select-item">
+	                <button data-select-item>Document</button>
+	              </li>
+	
+	            </ul>
+	            
+			</div>
+          
+			<ul class="project-list">
+			
+				<!-- 전자결재 시스템 -->
+				<li class="project-item  active" data-filter-item data-category="web development">
+					<a href="54.180.14.179/login">
+					
+					  <figure class="project-img">
+					    <div class="project-item-icon-box">
+					      <ion-icon name="eye-outline"></ion-icon>
+					    </div>
+					
+					    <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+					  </figure>
+				
+				    	<h3 class="project-title">GoodeeFit</h3>
+				
+				    	<p class="project-category">전자결재 시스템</p>
+				    
+					</a>
+					<p>
+						진행 기간 : 2023.08.14 ~ 2023.09.14 (4주)<br>
+						개발 환경<br>
+						&nbsp;&nbsp;OS : Windows 11<br>
+						&nbsp;&nbsp;Tool : Eclipse<br>
+						&nbsp;&nbsp;Skills : JAVA, HTML5, BootStrap, JavaScript, JSTL, JQuery<br>
+						&nbsp;&nbsp;Server : Apache Tomcat9<br>
+						&nbsp;&nbsp;DataBase : MariaDB, HeidiSQL<br>
+						서비스 환경<br>
+						&nbsp;&nbsp;OS : Ubuntu<br>
+						&nbsp;&nbsp;Platform : AWS Lightsail
+					</p>
+					<h4><a href="http://54.180.14.179/login" target="_blank">AWS Link</a></h4>
+					<h4><a href="https://github.com/lightshop666/EDMS" target="_blank">Source code</a></h4>
+				</li>
+			          
+				<!-- 밀키트 쇼핑몰 -->
+				<li class="project-item  active" data-filter-item data-category="web development">
+					<a href="54.180.14.179/semi_project">
+					
+					  <figure class="project-img">
+					    <div class="project-item-icon-box">
+					      <ion-icon name="eye-outline"></ion-icon>
+					    </div>
+					
+					    <img src="./assets/images/semi_project_main.png" alt="쉬운식탁" loading="lazy">
+					  </figure>
+					
+					  <h3 class="project-title">쉬운식탁</h3>
+					
+					  <p class="project-category">밀키트 쇼핑몰</p>
+					
+					</a>
+					<p>
+						ID : admin(관리자), abcd(일반)<br>
+						PW : 1234<br>
+						진행 기간 : 2023.05.30 ~ 2023.06.23 (4주)<br>
+						개발 환경<br>
+						&nbsp;&nbsp;OS : Windows 11<br>
+						&nbsp;&nbsp;Tool : Eclipse<br>
+						&nbsp;&nbsp;Skills : JAVA, HTML5, BootStrap, JavaScript, JQuery<br>
+						&nbsp;&nbsp;Server : Apache Tomcat9<br>
+						&nbsp;&nbsp;DataBase : MariaDB, HeidiSQL<br>
+						서비스 환경<br>
+						&nbsp;&nbsp;OS : Ubuntu<br>
+						&nbsp;&nbsp;Platform : AWS Lightsail
+					</p>
+					<h4><a href="http://54.180.14.179/semi_project/" target="_blank">AWS Link</a></h4>
+					<h4><a href="https://github.com/yeeunnnn/semi-project.git" target="_blank">Source code</a></h4>
+				</li>
+		        
+				<!-- 사내게시판 -->
+				<li class="project-item  active" data-filter-item data-category="web development">
+					<a href="#">
+					
+					  <figure class="project-img">
+					    <div class="project-item-icon-box">
+					      <ion-icon name="eye-outline"></ion-icon>
+					    </div>
+					
+					    <img src="./assets/images/puserBoard_main.jpg" alt="brawlhalla" loading="lazy">
+					  </figure>
+					
+					  <h3 class="project-title">user_board</h3>
+					
+					  <p class="project-category">사내게시판</p>
+					
+					</a>
+					<p>
+						ID : admin(관리자), user1(일반)<br>
+						PW : 1234<br>
+						진행 기간 : 2023.05.02 ~ 2023.05.17 (3주)<br>
+						개발 환경<br>
+						&nbsp;&nbsp;OS : Windows 11<br>
+						&nbsp;&nbsp;Tool : Eclipse<br>
+						&nbsp;&nbsp;Skills : JAVA, HTML5, BootStrap<br>
+						&nbsp;&nbsp;Server : Apache Tomcat9<br>
+						&nbsp;&nbsp;DataBase : MariaDB, HeidiSQL<br>
+						서비스 환경<br>
+						&nbsp;&nbsp;OS : Ubuntu<br>
+						&nbsp;&nbsp;Platform : AWS Lightsail
+					</p>
+					<h4><a href="http://54.180.14.179/userboard/home.jsp" target="_blank">AWS Link</a></h4>
+              		<h4><a href="https://github.com/yeeunnnn/user-board.git" target="_blank">Source code</a></h4>
+				</li>
+			
+				<!-- 다이어리 -->
+				<li class="project-item  active" data-filter-item data-category="web development">
+					<a href="#">
+				
+				    <figure class="project-img">
+				      <div class="project-item-icon-box">
+				        <ion-icon name="eye-outline"></ion-icon>
+				      </div>
+				
+				      <img src="./assets/images/diary_main.jpg" alt="dsm." loading="lazy">
+				    </figure>
+				
+				    <h3 class="project-title">Diary</h3>
+				
+				    <p class="project-category">일정관리 사이트</p>
+				
+					</a>
+					<p>
+						진행 기간 : 2023.04.05 ~ 2023.04.30 (4주)<br>
+						개발 환경<br>
+						&nbsp;&nbsp;OS : Windows 11<br>
+						&nbsp;&nbsp;Tool : Eclipse<br>
+						&nbsp;&nbsp;Skills : JAVA, HTML5, BootStrap<br>
+						&nbsp;&nbsp;Server : Apache Tomcat9<br>
+						&nbsp;&nbsp;DataBase : MariaDB, HeidiSQL<br>
+						서비스 환경<br>
+						&nbsp;&nbsp;OS : Ubuntu<br>
+						&nbsp;&nbsp;Platform : AWS Lightsail
+					</p>
+					<h4><a href="http://54.180.14.179/diary/home.jsp" target="_blank">AWS Link</a></h4>
+              		<h4><a href="https://github.com/yeeunnnn/diary.git" target="_blank">Source code</a></h4>
+				</li>
+				
+				<!-- 서류작업 -->
+				<li class="project-item  active" data-filter-item data-category="Document">
+					<a href="#">
+				
+				    <figure class="project-img">
+				      <div class="project-item-icon-box">
+				        <ion-icon name="eye-outline"></ion-icon>
+				      </div>
+				
+				      <img src="./assets/images/diary_main.jpg" alt="dsm." loading="lazy">
+				    </figure>
+				
+				    <h3 class="project-title">화면설계</h3>
+				
+				    <p class="project-category">Tool : Kakao Oven</p>
+				
+					</a>
+				</li>
+				
+				<!-- 서류작업 -->
+				<li class="project-item  active" data-filter-item data-category="Document">
+					<a href="#">
+				
+				    <figure class="project-img">
+				      <div class="project-item-icon-box">
+				        <ion-icon name="eye-outline"></ion-icon>
+				      </div>
+				
+				      <img src="./assets/images/diary_main.jpg" alt="dsm." loading="lazy">
+				    </figure>
+				
+				    <h3 class="project-title">WBS</h3>
+				
+				    <p class="project-category">Tool : Google Spreadsheet</p>
+				
+					</a>
+				</li>
+				
+			</ul>
+		</section>
+	</article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/GoodeeFit.png" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Velog</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-07-20">2023.7.20 ~</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">개인 작업 포스트</h3>
+
+                  <p class="blog-text">
+                    프로젝트 진행 시 기록하고 싶은 코드나,
+                    오류를 해결할 경우 필기하는 용도로 사용하였습니다.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Tistory</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-04-07">2023.04.07 ~ </time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">교육 일지 포스트</h3>
+
+                  <p class="blog-text">
+                    교육 시작일부터 특정 기간 내 교튝 후기 및 수업을
+                    복습하는 용도롤 사용하였습니다.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25339.7441903054!2d126.89007655531721!3d37.44967011238763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b61b4c6d09fa9%3A0xbdcc29a2bd33b468!2z7ISc7Jq47Yq567OE7IucIOq4iOyynOq1rCDsi5ztnaXrj5k!5e0!3m2!1sko!2skr!4v1690986563520!5m2!1sko!2skr"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+			
+			<h3 class="h3 form-title">Email</h3>
+			<div class="input-wrapper">
+				<input type="email" name="email" class="form-input" value="kyeni03130@gmail.com" readonly>
+			</div>
+			
+			<h3 class="h3 form-title">Call</h3>
+			<div class="input-wrapper">
+				<input type="text" name="fullname" class="form-input" value="+82 010-5786-2261" readonly>
+			</div>
+			
+        </section>
+
+      </article>
+
     </div>
-  </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  </main>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
